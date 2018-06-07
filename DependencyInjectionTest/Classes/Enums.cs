@@ -38,5 +38,14 @@ namespace DependencyInjectionTest.Classes
             Stoic,
             Amused
         }
+
+        public enum BearType
+        {
+            Polar,
+            Grizz,
+            Black,
+            Brown,
+            Massive
+        }
     }
 }

@@ -12,7 +12,7 @@ namespace DependencyInjectionTest.Classes.FunClasses
         Enums.SuitColors SuitColor { get; set; }
     }
 
-    public class Clown : IClown
+    class Clown : IClown
     {
         public string ClownName { get; set; }
         public Enums.SuitColors SuitColor { get; set; }

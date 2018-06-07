@@ -12,7 +12,7 @@ namespace DependencyInjectionTest.Classes.FunClasses
         int Weight { get; set; }
         Enums.ElephantType Type { get; set; }
     }
-    public class Elephant : IElephant
+    class Elephant : IElephant
     {
         public string ElephantName { get; set; }
         public int Weight { get; set; }

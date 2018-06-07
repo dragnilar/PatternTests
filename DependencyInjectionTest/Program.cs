@@ -41,6 +41,7 @@ namespace DependencyInjectionTest
             Console.WriteLine("Press 2 to Run DI Unity Test For Life Time Manager");
             Console.WriteLine("Press 3 to Run DI Unity Test For Transient Manager");
             Console.WriteLine("Press 4 to Run DI Unity Test For Registered Instances With A Container");
+            Console.WriteLine("Press 5 to Run DI Unity Test For Named Registered Instances With A Container");
             Console.WriteLine("Press Esc to Exit");
         }
 
@@ -64,6 +65,9 @@ namespace DependencyInjectionTest
                         break;
                     case ConsoleKey.D4:
                         tests.RunRegisteredInstancesWithContainerTest();
+                        break;
+                    case ConsoleKey.D5:
+                        tests.RunRegisteredInstancesWithNamedRegistrationTest();
                         break;
                     case ConsoleKey.Escape:
                         Environment.Exit(0);

@@ -17,6 +17,7 @@ namespace DependencyInjectionTest.Classes
         void RunContainerControlledLifetimeManagerTest();
         void RunContainerControlledTransientManagerTest();
         void RunRegisteredInstancesWithContainerTest();
+        void RunRegisteredInstancesWithNamedRegistrationTest();
     }
     public class UnityTests : IUnityTests
     {
@@ -101,7 +102,7 @@ namespace DependencyInjectionTest.Classes
             IUnityContainer container = new UnityContainer();
 
             Console.WriteLine("Registering fun stuff...");
-            FunContainer.RegisterFunStuff(container);
+            FunContainers.RegisterFunStuffForRegisterTest(container);
 
             Console.WriteLine("Resolving fun stuff...");
             IClown clown = container.Resolve<IClown>();
@@ -125,6 +126,21 @@ namespace DependencyInjectionTest.Classes
             Console.WriteLine(circus.GetLocation());
             circus.MakeElephantDoSomethingWithClown();
 
+        }
+
+        public void RunRegisteredInstancesWithNamedRegistrationTest()
+        {
+            Console.WriteLine("Creating new unity container...");
+            IUnityContainer container = new UnityContainer();
+
+            Console.WriteLine("Registering fun stuff...");
+            FunContainers.RegisterFunStuffForNamedRegisterTest(container);
+
+            IBear dancingBear = container.Resolve<IBear>("Dance");
+            IBear singingBear = container.Resolve<IBear>("Sing");
+
+            dancingBear.Perform();
+            singingBear.Perform();
         }
     }
 }

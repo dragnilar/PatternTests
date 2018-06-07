@@ -15,7 +15,7 @@ namespace DependencyInjectionTest.Classes.FunClasses
         void MakeElephantDoSomethingWithClown();
     }
 
-    public class Circus : ICircus
+    class Circus : ICircus
     {
         public IClown Clown { get; set; }
         public IElephant Elephant { get; set; }

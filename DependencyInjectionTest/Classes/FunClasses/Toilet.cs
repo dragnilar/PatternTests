@@ -12,7 +12,7 @@ namespace DependencyInjectionTest.Classes.FunClasses
         int FlushPower { get; set; }
         Enums.ToiletType Type { get; set; }
     }
-    public class Toilet : IToilet
+    class Toilet : IToilet
     {
         public string ToiletLocation { get; set; }
         public int FlushPower { get; set; }

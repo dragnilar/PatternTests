@@ -9,9 +9,9 @@ using Unity.Injection;
 
 namespace DependencyInjectionTest.Classes
 {
-    public class FunContainer
+    public class FunContainers
     {
-        public static void RegisterFunStuff(IUnityContainer container)
+        public static void RegisterFunStuffForRegisterTest(IUnityContainer container)
         {
             var aToilet = new Toilet();
             aToilet.ToiletLocation = "Hiding where you least suspect it...";
@@ -25,6 +25,12 @@ namespace DependencyInjectionTest.Classes
             var aClown = typeof(IClown);
 
             container.RegisterType<ICircus, Circus>(new InjectionConstructor(aClown, anElephant, typeof(string)));
+        }
+
+        public static void RegisterFunStuffForNamedRegisterTest(IUnityContainer container)
+        {
+            container.RegisterType<IBear, DancingBear>("Dance");
+            container.RegisterType<IBear, SingingBear>("Sing");
         }
     }
 }
