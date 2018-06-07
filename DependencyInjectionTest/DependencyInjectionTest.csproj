@@ -69,6 +69,12 @@
     <Compile Include="Classes\BoringClasses\ClassThree.cs" />
     <Compile Include="Classes\BoringClasses\IClassOne.cs" />
     <Compile Include="Classes\BoringClasses\IClassTwo.cs" />
+    <Compile Include="Classes\Enums.cs" />
+    <Compile Include="Classes\FunClasses\Circus.cs" />
+    <Compile Include="Classes\FunClasses\Clown.cs" />
+    <Compile Include="Classes\FunClasses\Elephant.cs" />
+    <Compile Include="Classes\FunClasses\Toilet.cs" />
+    <Compile Include="Classes\FunContainer.cs" />
     <Compile Include="Classes\UnityTests.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
