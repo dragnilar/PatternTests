@@ -1,4 +1,4 @@
-﻿namespace DependencyInjectionTest.Classes
+﻿namespace DependencyInjectionTest.Classes.BoringClasses
 {
     interface IClassOne
     {

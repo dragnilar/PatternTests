@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DependencyInjectionTest.Classes
+namespace DependencyInjectionTest.Classes.BoringClasses
 {
     class ClassThree
     {

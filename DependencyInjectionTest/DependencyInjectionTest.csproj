@@ -66,13 +66,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\ClassThree.cs" />
-    <Compile Include="Classes\IClassOne.cs" />
-    <Compile Include="Classes\IClassTwo.cs" />
+    <Compile Include="Classes\BoringClasses\ClassThree.cs" />
+    <Compile Include="Classes\BoringClasses\IClassOne.cs" />
+    <Compile Include="Classes\BoringClasses\IClassTwo.cs" />
+    <Compile Include="Classes\UnityTests.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Classes\ClassOne.cs" />
-    <Compile Include="Classes\ClassTwo.cs" />
+    <Compile Include="Classes\BoringClasses\ClassOne.cs" />
+    <Compile Include="Classes\BoringClasses\ClassTwo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
