@@ -10,7 +10,7 @@ namespace EvilFizzBizz
 {
     partial class Program
     {
-        static readonly FizzBizzMethods FizzBizzCollection = new FizzBizzMethods();
+        static readonly RegularFizzBizz RegularFizzBizzCollection = new RegularFizzBizz();
         static void Main(string[] args)
         {
             MainMenu();
@@ -32,27 +32,27 @@ namespace EvilFizzBizz
                     case ConsoleKey.D1:
                     case ConsoleKey.NumPad1:
                         Console.Clear();
-                        FizzBizzCollection.ClassicFizzBizz();
+                        RegularFizzBizzCollection.ClassicFizzBizz();
                         break;
                     case ConsoleKey.D2:
                     case ConsoleKey.NumPad2:
                         Console.Clear();
-                        FizzBizzCollection.ClassicFizzBizz2();
+                        RegularFizzBizzCollection.ClassicFizzBizz2();
                         break;
                     case ConsoleKey.D3:
                     case ConsoleKey.NumPad3:
                         Console.Clear();
-                        FizzBizzCollection.LinqFizzBizz();
+                        RegularFizzBizzCollection.LinqFizzBizz();
                         break;
                     case ConsoleKey.D4:
                     case ConsoleKey.NumPad4:
                         Console.Clear();
-                        FizzBizzCollection.LinqFizzBizz2();
+                        RegularFizzBizzCollection.LinqFizzBizz2();
                         break;
                     case ConsoleKey.D5:
                     case ConsoleKey.NumPad5:
                         Console.Clear();
-                        FizzBizzCollection.FizzBizzWithNoModulus();
+                        RegularFizzBizzCollection.FizzBizzWithNoModulus();
                         break;
                     case ConsoleKey.D7:
                     case ConsoleKey.NumPad7:
@@ -63,7 +63,7 @@ namespace EvilFizzBizz
                     case ConsoleKey.D6:
                     case ConsoleKey.NumPad6:
                         Console.Clear();
-                        new FizzBizzNonStandard().DoFizzBizz();
+                        new SolidFizzBizz().DoSolidFizzBizz();
                         break;
                     case ConsoleKey.Escape:
                         Console.Clear();

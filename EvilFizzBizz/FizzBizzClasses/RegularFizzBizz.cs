@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace EvilFizzBizz
 {
-    public class FizzBizzMethods
+    public class RegularFizzBizz
     {
 
         public void ClassicFizzBizz()

@@ -4,9 +4,9 @@ using System.Text;
 
 namespace EvilFizzBizz
 {
-    public class FizzBizzNonStandard
+    public class SolidFizzBizz
     {
-        public void DoFizzBizz()
+        public void DoSolidFizzBizz()
         {
             var catalog = new FizzBizzCatalog();
             catalog.Add(3, App.Config.FizzString);
@@ -18,7 +18,7 @@ namespace EvilFizzBizz
             counter.OutPutFizzBizz();
         }
 
-        internal class FizzBizzCounter
+        private class FizzBizzCounter
         {
             private readonly FizzBizzCatalog _fizzBizzCatalog;
             private readonly int max;
@@ -37,7 +37,7 @@ namespace EvilFizzBizz
             }
         }
 
-        internal class FizzBizzCatalog
+        private class FizzBizzCatalog
         {
             private readonly List<FizzBizzSpecification> fizzBizzSpecs;
 
@@ -63,7 +63,7 @@ namespace EvilFizzBizz
                 return String.IsNullOrWhiteSpace(outputString) ? Number.ToString() : outputString;
             }
 
-            internal class FizzBizzSpecification
+            private class FizzBizzSpecification
             {
                 internal int Divisor;
                 internal string Output;

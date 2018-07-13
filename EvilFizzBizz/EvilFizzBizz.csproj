@@ -42,8 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FizzBizzNonStandard.cs" />
-    <Compile Include="FizzBizzMethods.cs" />
+    <Compile Include="FizzBizzClasses\SolidFizzBizz.cs" />
+    <Compile Include="FizzBizzClasses\RegularFizzBizz.cs" />
     <Compile Include="App.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
