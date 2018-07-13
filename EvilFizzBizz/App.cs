@@ -4,7 +4,6 @@
     {
         private static class FizzBizzValues
         {
-
             public const string Fizz = "Fizz";
             public const string Bizz = "Bizz";
             public const string FizzBizz = "Fizz Bizz!";
@@ -19,33 +18,31 @@
 
         public static class Config
         {
-            public static string FizzBizzString = App.FizzBizzValues.FizzBizz;
-            public static string FizzString = App.FizzBizzValues.Fizz;
-            public static string BizzString = App.FizzBizzValues.Bizz;
-            public static string PozzString = App.FizzBizzValues.Pozz;
+            public static string FizzBizzString = FizzBizzValues.FizzBizz;
+            public static string FizzString = FizzBizzValues.Fizz;
+            public static string BizzString = FizzBizzValues.Bizz;
+            public static string PozzString = FizzBizzValues.Pozz;
             private static bool _obscene;
 
             public static void ToggleObscenities()
             {
                 if (_obscene)
                 {
-                    FizzBizzString = App.FizzBizzValues.FizzBizz;
-                    FizzString = App.FizzBizzValues.Fizz;
-                    BizzString = App.FizzBizzValues.Bizz;
-                    PozzString = App.FizzBizzValues.Pozz;
+                    FizzBizzString = FizzBizzValues.FizzBizz;
+                    FizzString = FizzBizzValues.Fizz;
+                    BizzString = FizzBizzValues.Bizz;
+                    PozzString = FizzBizzValues.Pozz;
                     _obscene = false;
                 }
                 else
                 {
-                    FizzBizzString = App.FizzBizzValues.FuckYou;
-                    FizzString = App.FizzBizzValues.Fuck;
-                    BizzString = App.FizzBizzValues.You;
-                    PozzString = App.FizzBizzValues.ItsShitty;
+                    FizzBizzString = FizzBizzValues.FuckYou;
+                    FizzString = FizzBizzValues.Fuck;
+                    BizzString = FizzBizzValues.You;
+                    PozzString = FizzBizzValues.ItsShitty;
                     _obscene = true;
                 }
             }
         }
-
-
     }
 }
