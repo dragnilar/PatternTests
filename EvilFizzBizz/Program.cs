@@ -5,6 +5,7 @@ using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using EvilFizzBizz.FizzBizzClasses;
 
 namespace EvilFizzBizz
 {
@@ -54,16 +55,25 @@ namespace EvilFizzBizz
                         Console.Clear();
                         RegularFizzBizzCollection.FizzBizzWithNoModulus();
                         break;
-                    case ConsoleKey.D7:
-                    case ConsoleKey.NumPad7:
-                        Console.Clear();
-                        Console.WriteLine("Toggling obscenities...");
-                        App.Config.ToggleObscenities();
-                        break;
                     case ConsoleKey.D6:
                     case ConsoleKey.NumPad6:
                         Console.Clear();
                         new SolidFizzBizz().DoSolidFizzBizz();
+                        break;
+                    case ConsoleKey.D7:
+                    case ConsoleKey.NumPad7:
+                        Console.Clear();
+                        RegularFizzBizzCollection.FizzBizzWithForEach();
+                        break;
+                    case ConsoleKey.D8:
+                    case ConsoleKey.NumPad8:
+                        Console.Clear();
+                        new SomeOtherOverlyComplexFizzBizz().DoTheFizzBizz();
+                        break;
+                    case ConsoleKey.F:
+                        Console.Clear();
+                        Console.WriteLine("Toggling obscenities...");
+                        App.Config.ToggleObscenities();
                         break;
                     case ConsoleKey.Escape:
                         Console.Clear();
@@ -90,7 +100,9 @@ namespace EvilFizzBizz
             Console.WriteLine("4. Linq Fizz Bizz 2");
             Console.WriteLine("5. Fizz Bizz With NO Modulus");
             Console.WriteLine("6. Non-Standard Fizz Bizz With Classes");
-            Console.WriteLine("You can also press 7 to toggle obscenities and tell 'em what you really think about Fizz Bizz...");
+            Console.WriteLine("7. Fizz Bizz Using a For Each");
+            Console.WriteLine("8. Some other overly complex Fizz Bizz");
+            Console.WriteLine("You can also press F to toggle obscenities and tell 'em what you really think about Fizz Bizz...");
             Console.WriteLine("Press Esc to Exit");
         }
 

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace EvilFizzBizz
@@ -11,14 +12,17 @@ namespace EvilFizzBizz
             for (var i = 1; i <= 100; i++)
                 if (i % 3 == 0 && i % 5 == 0)
                 {
-                    PrintForFizzBizz(i, App.Config.FizzBizzString);
+                    App.Util.GenericPrint(i, App.Config.FizzBizzString);
                 }
 
                 else
                 {
-                    if (i % 3 == 0) PrintForFizzBizz(i, App.Config.FizzString);
+                    if (i % 3 == 0) App.Util.GenericPrint(i, App.Config.FizzString);
 
-                    if (i % 5 == 0) PrintForFizzBizz(i, App.Config.BizzString);
+                    else if (i % 5 == 0) App.Util.GenericPrint(i, App.Config.BizzString);
+
+                    else App.Util.GenericPrint(i);
+                    
                 }
         }
 
@@ -27,15 +31,47 @@ namespace EvilFizzBizz
             for (var i = 1; i <= 100; i++)
                 if (i % 15 == 0)
                 {
-                    PrintForFizzBizz(i, App.Config.FizzBizzString);
+                    App.Util.GenericPrint(i, App.Config.FizzBizzString);
                 }
 
                 else
                 {
-                    if (i % 3 == 0) PrintForFizzBizz(i, App.Config.FizzString);
+                    if (i % 3 == 0) App.Util.GenericPrint(i, App.Config.FizzString);
 
-                    if (i % 5 == 0) PrintForFizzBizz(i, App.Config.BizzString);
+                    else if (i % 5 == 0) App.Util.GenericPrint(i, App.Config.BizzString);
+
+                    else App.Util.GenericPrint(i);
                 }
+        }
+
+        public void FizzBizzWithForEach()
+        {
+            var integerList = new List<int>();
+            integerList.AddRange(Enumerable.Range(1, 100));
+
+
+            foreach (var integer in integerList)
+            {
+                if (integer % 15 == 0)
+                {
+                    App.Util.GenericPrint(integer, App.Config.FizzBizzString);
+                }
+
+                else if (integer % 5 == 0)
+                {
+                    App.Util.GenericPrint(integer, App.Config.BizzString);
+                }
+
+                else if (integer % 3 == 0)
+                {
+                    App.Util.GenericPrint(integer, App.Config.FizzString);
+                }
+
+                else
+                {
+                    App.Util.GenericPrint(integer);
+                }
+            }
         }
 
         public void LinqFizzBizz()
@@ -66,25 +102,25 @@ namespace EvilFizzBizz
             {
                 if (fizzBizzNumber == 15)
                 {
-                    PrintForFizzBizz(counter, App.Config.FizzBizzString);
+                    App.Util.GenericPrint(counter, App.Config.FizzBizzString);
                     fizzBizzNumber = 0;
                     fizzNumber = 0;
                     bizzNumber = 0;
                 }
                 else if (fizzNumber == 3)
                 {
-                    PrintForFizzBizz(counter, App.Config.FizzString);
+                    App.Util.GenericPrint(counter, App.Config.FizzString);
                     fizzNumber = 0;
                 }
 
                 else if (bizzNumber == 5)
                 {
-                    PrintForFizzBizz(counter, App.Config.BizzString);
+                    App.Util.GenericPrint(counter, App.Config.BizzString);
                     bizzNumber = 0;
                 }
                 else
                 {
-                    Console.WriteLine(counter);
+                   App.Util.GenericPrint(counter);
                 }
 
                 if (counter < 100)
@@ -98,11 +134,6 @@ namespace EvilFizzBizz
 
                 break;
             }
-        }
-
-        private void PrintForFizzBizz(int value, string word)
-        {
-            Console.WriteLine($"{value}, {word}");
         }
     }
 }

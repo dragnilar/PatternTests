@@ -45,8 +45,10 @@
     <Compile Include="FizzBizzClasses\SolidFizzBizz.cs" />
     <Compile Include="FizzBizzClasses\RegularFizzBizz.cs" />
     <Compile Include="App.cs" />
+    <Compile Include="FizzBizzClasses\SomeOtherOverlyComplexFizzBizz.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UtilityMethods.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

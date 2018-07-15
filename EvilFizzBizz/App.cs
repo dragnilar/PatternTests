@@ -2,6 +2,8 @@
 {
     public static class App
     {
+        public static readonly UtilityMethods Util = new UtilityMethods();
+
         private static class FizzBizzValues
         {
             public const string Fizz = "Fizz";
