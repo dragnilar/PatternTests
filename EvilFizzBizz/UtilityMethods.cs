@@ -28,6 +28,22 @@ namespace EvilFizzBizz
             return dividend % divisor == 0;
         }
 
+        public bool IsDivisibleByDivisorGeneric<T, T2>(T dividend, T2 divisor)
+        {
+            try
+            {
+                return Convert.ToInt32(dividend) % Convert.ToInt32(divisor) == 0;
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error attempting to check if number is divisible by divisor. \n" + e);
+                return false;
+
+            }
+        }
+
+
 
         public void GenericPrint(int value, string word = null)
         {

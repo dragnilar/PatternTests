@@ -58,17 +58,7 @@ namespace EvilFizzBizz
                     case ConsoleKey.D6:
                     case ConsoleKey.NumPad6:
                         Console.Clear();
-                        new SolidFizzBizz().DoSolidFizzBizz();
-                        break;
-                    case ConsoleKey.D7:
-                    case ConsoleKey.NumPad7:
-                        Console.Clear();
-                        RegularFizzBizzCollection.FizzBizzWithForEach();
-                        break;
-                    case ConsoleKey.D8:
-                    case ConsoleKey.NumPad8:
-                        Console.Clear();
-                        new SomeOtherOverlyComplexFizzBizz().DoTheFizzBizz();
+                        MenuTwo();
                         break;
                     case ConsoleKey.F:
                         Console.Clear();
@@ -91,6 +81,55 @@ namespace EvilFizzBizz
 
         }
 
+        private static void MenuTwo()
+        {
+            while (true)
+            {
+                ShowMenuTwoOptions();
+
+                var input = Console.ReadKey();
+                switch (input.Key)
+                {
+                    case ConsoleKey.D1:
+                    case ConsoleKey.NumPad1:
+                        Console.Clear();
+                        new SolidFizzBizz().DoSolidFizzBizz();
+                        break;
+                    case ConsoleKey.D2:
+                    case ConsoleKey.NumPad2:
+                        Console.Clear();
+                        RegularFizzBizzCollection.FizzBizzWithForEach();
+                        break;
+                    case ConsoleKey.D3:
+                    case ConsoleKey.NumPad3:
+                        Console.Clear();
+                        new SomeOtherOverlyComplexFizzBizz().DoTheFizzBizz();
+                        break;
+                    case ConsoleKey.D4:
+                    case ConsoleKey.NumPad4:
+                        Console.Clear();
+                        RegularFizzBizzCollection.LinqFizzBizz3();
+                        break;
+                    case ConsoleKey.D5:
+                    case ConsoleKey.NumPad5:
+                        Console.Clear();
+                        RegularFizzBizzCollection.FizzBizzWithDictionary();
+                        break;
+                    case ConsoleKey.Escape:
+                        Console.Clear();
+                        MainMenu();
+                        break;
+                    default:
+                        Console.Clear();
+                        Console.WriteLine("You selected an invalid test... :/");
+                        break;
+                }
+
+                ReturnToMenuTwo();
+                break;
+            }
+        }
+
         static void ShowMenuOptions()
         {
             Console.WriteLine("Select a Fizz Bizz Test To Run..");
@@ -99,11 +138,22 @@ namespace EvilFizzBizz
             Console.WriteLine("3. Linq Fizz Bizz");
             Console.WriteLine("4. Linq Fizz Bizz 2");
             Console.WriteLine("5. Fizz Bizz With NO Modulus");
-            Console.WriteLine("6. Non-Standard Fizz Bizz With Classes");
-            Console.WriteLine("7. Fizz Bizz Using a For Each");
-            Console.WriteLine("8. Some other overly complex Fizz Bizz");
+            Console.WriteLine("6. More...");
             Console.WriteLine("You can also press F to toggle obscenities and tell 'em what you really think about Fizz Bizz...");
             Console.WriteLine("Press Esc to Exit");
+        }
+
+
+        static void ShowMenuTwoOptions()
+        {
+            Console.WriteLine("Menu Two");
+            Console.WriteLine("Select a Fizz Bizz Test To Run..");
+            Console.WriteLine("1. Non-Standard Fizz Bizz With Classes");
+            Console.WriteLine("2. Fizz Bizz Using a For Each");
+            Console.WriteLine("3. Some other overly complex Fizz Bizz");
+            Console.WriteLine("4. Linq Fizz Bizz 3");
+            Console.WriteLine("5. Fizz Bizz With a Dictionary, Nested For Each Loops And Other Stuff...");
+            Console.WriteLine("Press Esc to go up one menu");
         }
 
 
@@ -114,6 +164,14 @@ namespace EvilFizzBizz
             Console.ReadKey();
             Console.Clear();
             MainMenu();
+        }
+
+        private static void ReturnToMenuTwo()
+        {
+            Console.WriteLine("Press Any Key To Return To Second Menu");
+            Console.ReadKey();
+            Console.Clear();
+            MenuTwo();
         }
 
 
