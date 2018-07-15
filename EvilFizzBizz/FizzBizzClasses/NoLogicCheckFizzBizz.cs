@@ -4,9 +4,13 @@ using System.Text;
 
 namespace EvilFizzBizz
 {
-    public class SolidFizzBizz
+    public class NoLogicCheckFizzBizz
     {
-        public void DoSolidFizzBizz()
+        /// <summary>
+        /// This is an example of doing the fizz bizz without using any hard coded logic checks. This is primarily taken from this code review post:
+        /// https://codereview.stackexchange.com/questions/121714/fizzbuzz-without-hard-coded-logic-checks
+        /// </summary>
+        public void DoTheFizzBizz()
         {
             var catalog = new FizzBizzCatalog();
             catalog.Add(3, App.Config.FizzString);

@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FizzBizzClasses\SolidFizzBizz.cs" />
+    <Compile Include="FizzBizzClasses\NoLogicCheckFizzBizz.cs" />
     <Compile Include="FizzBizzClasses\RegularFizzBizz.cs" />
     <Compile Include="App.cs" />
     <Compile Include="FizzBizzClasses\SomeOtherOverlyComplexFizzBizz.cs" />

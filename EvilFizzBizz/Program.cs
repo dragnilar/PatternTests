@@ -93,7 +93,7 @@ namespace EvilFizzBizz
                     case ConsoleKey.D1:
                     case ConsoleKey.NumPad1:
                         Console.Clear();
-                        new SolidFizzBizz().DoSolidFizzBizz();
+                        new NoLogicCheckFizzBizz().DoTheFizzBizz();
                         break;
                     case ConsoleKey.D2:
                     case ConsoleKey.NumPad2:
@@ -148,7 +148,7 @@ namespace EvilFizzBizz
         {
             Console.WriteLine("Menu Two");
             Console.WriteLine("Select a Fizz Bizz Test To Run..");
-            Console.WriteLine("1. Non-Standard Fizz Bizz With Classes");
+            Console.WriteLine("1. Fizz Bizz With No Hardcoded Logic Checks");
             Console.WriteLine("2. Fizz Bizz Using a For Each");
             Console.WriteLine("3. Some other overly complex Fizz Bizz");
             Console.WriteLine("4. Linq Fizz Bizz 3");

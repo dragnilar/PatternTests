@@ -8,6 +8,12 @@ namespace EvilFizzBizz.FizzBizzClasses
 {
     public class SomeOtherOverlyComplexFizzBizz
     {
+        /// <summary>
+        /// This is an another example of doing the fizz bizz without using any hard coded logic checks.
+        /// This is heavily based on the following code review post: 
+        /// https://codereview.stackexchange.com/questions/121714/fizzbuzz-without-hard-coded-logic-checks
+        /// Note that this one can throw some funny exceptions..
+        /// </summary>
         public void DoTheFizzBizz()
         {
             var fizzBizzBook = new FizzBizzPointBook();
