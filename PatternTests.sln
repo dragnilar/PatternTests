@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInjectionTest", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvilFizzBizz", "EvilFizzBizz\EvilFizzBizz.csproj", "{EA7F49AF-9864-4A3D-A73B-2AD7B0E11E8C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisitorTest", "VisitorTest\VisitorTest.csproj", "{A0F8FB11-D463-48D9-B73A-20857FB10DF7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{EA7F49AF-9864-4A3D-A73B-2AD7B0E11E8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA7F49AF-9864-4A3D-A73B-2AD7B0E11E8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA7F49AF-9864-4A3D-A73B-2AD7B0E11E8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0F8FB11-D463-48D9-B73A-20857FB10DF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0F8FB11-D463-48D9-B73A-20857FB10DF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0F8FB11-D463-48D9-B73A-20857FB10DF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0F8FB11-D463-48D9-B73A-20857FB10DF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
