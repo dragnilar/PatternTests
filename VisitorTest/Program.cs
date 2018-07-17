@@ -23,10 +23,10 @@ namespace VisitorTest
         static void Main()
 
         {
-            Console.WriteLine("Starting RPG Visitor Example 1...");
-            var visitorExample1 = new RPGVisitorExample1();
+            Console.WriteLine("Starting RPG Visitor Example Using An Abstract Class...");
+            var visitorExample1 = new RPGVisitorUsingAbstractClass();
             visitorExample1.PerformNpcAndMonsterVisit();
-            Console.WriteLine("End RPG visitor example 1");
+            Console.WriteLine("End of example using an abstract class");
             Console.WriteLine("Press any key to exit.");
             Console.ReadKey();
 

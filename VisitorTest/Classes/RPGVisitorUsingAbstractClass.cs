@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VisitorTest.Classes
 {
-    public class RPGVisitorExample1
+    public class RPGVisitorUsingAbstractClass
     {
         /// <summary>
         /// Performs visitor operation on some RPG game classes (NPC and Monster)
