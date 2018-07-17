@@ -18,6 +18,11 @@ namespace DependencyInjectionTest
 
     class Program
     {
+        /// <summary>
+        /// This is an example of using the IOC pattern with Unity. If time permits we will add more examples using other
+        /// libraries...
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
             MainMenu();
