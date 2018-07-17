@@ -12,6 +12,13 @@ namespace EvilFizzBizz
     partial class Program
     {
         static readonly RegularFizzBizz RegularFizzBizzCollection = new RegularFizzBizz();
+
+        /// <summary>
+        /// This is not really a pattern example or test. This is just a bunch of examples on how to do the silly FizzBizz game in C#
+        /// using various approaches. For sources of inspiration and/or the base of the examples, refer to the XML documentation on
+        /// the particular methods or classes.
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
             MainMenu();

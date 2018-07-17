@@ -8,6 +8,12 @@ namespace FactoryTest
 {
     class Program
     {
+        /// <summary>
+        /// The following is an example of using the factory pattern. You can learn more about the factory pattern by going here
+        /// or searching around the web:
+        /// https://refactoring.guru/design-patterns/factory-method
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
             MainMenu();

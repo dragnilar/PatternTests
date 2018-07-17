@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace EvilFizzBizz
 {
+    /// <summary>
+    /// This is a simple class that provides common functionality that is shared across all of the application. 
+    /// </summary>
     public class UtilityMethods
     {
         public bool IsDivisibleBy15(int x)

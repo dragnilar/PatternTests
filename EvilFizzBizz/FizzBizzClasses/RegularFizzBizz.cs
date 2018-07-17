@@ -32,7 +32,7 @@ namespace EvilFizzBizz
         }
 
         /// <summary>
-        /// This is another classic example of fizz bizz writen in C#. The only major difference is that this one uses 15 for the FizzBizz string
+        /// This is another classic example of fizz bizz written in C#. The only major difference is that this one uses 15 for the FizzBizz string
         /// instead of checking both 3 and 5 to save some time. Otherwise its identical to the other classic example.
         /// </summary>
         public void ClassicFizzBizz2()
@@ -127,6 +127,7 @@ namespace EvilFizzBizz
 
         /// <summary>
         /// An example of FizzBizz with a dictionary, a nested for each loop and an ugly generic method that can throw exceptions.
+        /// This was not based on anything in particular.
         /// </summary>
         public void FizzBizzWithDictionary()
         {
@@ -159,6 +160,7 @@ namespace EvilFizzBizz
         /// <summary>
         /// This is an example of doing the fizz bizz without using any % operators. This is based on this post from DreamInCode:
         /// https://www.dreamincode.net/forums/topic/290153-fizzbuzz-without-mod/
+        /// Note that this was originally written in C++. It has been refactored in C# so that it does not use recursion. 
         /// </summary>
         public void FizzBizzWithNoModulus()
         {
