@@ -9,13 +9,10 @@ namespace VisitorTest
 {
 
     /// <summary>
-
-    /// MainApp startup class for Structural 
-
-    /// Visitor Design Pattern.
-
+    /// This shows examples of using the visitor pattern. You can read more about the visitor pattern at
+    /// the following link and of course other places around the web.
+    /// https://refactoring.guru/design-patterns/visitor
     /// </summary>
-
     class MainApp
 
     {
@@ -27,6 +24,12 @@ namespace VisitorTest
             var visitorExample1 = new RPGVisitorUsingAbstractClass();
             visitorExample1.PerformNpcAndMonsterVisit();
             Console.WriteLine("End of example using an abstract class");
+            Console.WriteLine("Press any key to view next example.");
+            Console.ReadKey();
+            Console.Clear();
+            Console.WriteLine("Starting RPG Visitor Example Using An Interface...");
+            var visitorExample2 = new RPGVisitorExampleUsingInterface();
+            visitorExample2.PerformVisitOnCharacters();
             Console.WriteLine("Press any key to exit.");
             Console.ReadKey();
 
