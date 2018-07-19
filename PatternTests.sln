@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisitorTest", "VisitorTest\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdapterTest", "AdapterTest\AdapterTest.csproj", "{158CFBE6-4ACF-41AD-BD1D-923DD696FA2D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyTest", "StrategyTest\StrategyTest.csproj", "{9326F23F-545F-4406-B744-BEB887DFB747}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{158CFBE6-4ACF-41AD-BD1D-923DD696FA2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{158CFBE6-4ACF-41AD-BD1D-923DD696FA2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{158CFBE6-4ACF-41AD-BD1D-923DD696FA2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9326F23F-545F-4406-B744-BEB887DFB747}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9326F23F-545F-4406-B744-BEB887DFB747}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9326F23F-545F-4406-B744-BEB887DFB747}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9326F23F-545F-4406-B744-BEB887DFB747}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
