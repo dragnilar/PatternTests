@@ -19,6 +19,7 @@ namespace StrategyTest
             while (true)
             {
                 Console.WriteLine("Press 1 to Run Basic Strategy Test");
+                Console.WriteLine("Press 2 to Monster Strategy Test");
                 Console.WriteLine("Press Esc to Exit");
 
                 while (true)
@@ -30,6 +31,10 @@ namespace StrategyTest
                         case ConsoleKey.D1:
                         case ConsoleKey.NumPad1:
                             new BasicStrategyExample().ShowExample();
+                            break;
+                        case ConsoleKey.D2:
+                        case ConsoleKey.NumPad2:
+                            new MonsterStrategy().RunExample();
                             break;
                         case ConsoleKey.Escape:
                             Environment.Exit(0);
