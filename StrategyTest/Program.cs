@@ -9,8 +9,15 @@ namespace StrategyTest
 {
     class Program
     {
+        /// <summary>
+        /// The following is an example of using the strategy pattern. You can learn more about the strategy pattern by going here
+        /// or searching around the web:
+        /// https://refactoring.guru/design-patterns/strategy
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
+
             MainMenu();
         }
 
