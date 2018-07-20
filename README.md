@@ -10,6 +10,7 @@ However if you need some .NET examples, this may help.
 <h2>Current Patterns Covered </h2>
 <ul>
 <li>Adapter</li>
+<li>Command (uses WPF)</li>
 <li>Dependency Injection</li>
 <li>Factory</li>
 <li>Strategy</li>
