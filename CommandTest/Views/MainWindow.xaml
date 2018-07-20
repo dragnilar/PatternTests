@@ -1,0 +1,39 @@
+﻿<Window x:Class="CommandTest.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CommandTest"
+        mc:Ignorable="d"
+        Title="Command Tests" Height="450" Width="800">
+    <Grid Name="GridMainWindowTop" Background="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75*"></RowDefinition>
+            <RowDefinition Height="344*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Background="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" Name="GridMainWindowBottom" Grid.Row="1">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="10"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="50"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="39*"></RowDefinition>
+                <RowDefinition Height="90*"></RowDefinition>
+                <RowDefinition Height="192*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Button Name="CommandTestOneButton" Content="Command Test One" Grid.Row="1" Grid.Column="1"
+                    FontSize="25" Foreground="Black" Background="Azure" BorderBrush="CornflowerBlue" BorderThickness="5"
+                    Click="CommandTestOneButton_OnClick"></Button>
+        </Grid>
+        <Label Content="Press A Button Below To View A Command Demo" Grid.Row="0" Name="HeaderLabel" Foreground="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}"
+               VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="35"
+               Width="Auto" Height="Auto"/>
+
+    </Grid>
+
+
+</Window>
