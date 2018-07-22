@@ -10,8 +10,7 @@ namespace CommandTest.Classes.ColorChangeDemoClasses
     public abstract class ColorCommand 
     {
         protected readonly ColorChangerDemoWindow Window;
-        private Brush BackupColorBrush;
-        private Brush GenericBrush;
+        private Brush _previousColorBrush;
 
         protected ColorCommand(ColorChangerDemoWindow window)
         {
@@ -21,12 +20,12 @@ namespace CommandTest.Classes.ColorChangeDemoClasses
 
         protected void Backup()
         {
-            BackupColorBrush = Window.Background;
+            _previousColorBrush = Window.Background;
         }
 
         public void Undo()
         {
-            Window.Background = BackupColorBrush;
+            Window.Background = _previousColorBrush;
         }
 
         public abstract bool ExecuteColorChange();

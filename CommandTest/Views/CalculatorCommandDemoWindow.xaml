@@ -25,7 +25,7 @@
             <RowDefinition Height="250*"></RowDefinition>
             <RowDefinition Height ="75*"></RowDefinition>
         </Grid.RowDefinitions>
-        <Label Content="Command Demo: Calculator" Grid.Row="0" Name="HeaderLabel" Foreground="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}"
+        <Label Content="Command Demo: CalculatorReceiver" Grid.Row="0" Name="HeaderLabel" Foreground="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}"
                VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="35"
                Width="Auto" Height="Auto"/>
         <Separator VerticalAlignment="Bottom"></Separator>
@@ -62,13 +62,18 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"></RowDefinition>
                 <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"></RowDefinition>
                 <RowDefinition Height="*"></RowDefinition>
             </Grid.RowDefinitions>
             <Button Grid.Row="1" Grid.Column="1" Content="Add ( + )" Name="AddButton" Click="AddButton_OnClick"></Button>
             <Button Grid.Row="1" Grid.Column="3" Content="Subtract ( - )" Name="SubtractButton" Click="SubtractButton_OnClick" ></Button>
             <Button Grid.Row="1" Grid.Column="5" Content="Divide ( / )" Name="DivideButton" Click="DivideButton_OnClick"></Button>
             <Button Grid.Row="1" Grid.Column="7" Content="Multiply( * )" Name="MultiplyButton" Click="MultiplyButton_OnClick"></Button>
-            <Button Grid.Row="1" Grid.Column="9" Content="Undo Last Command" Name="UndoButton" Click="UndoButton_OnClick"></Button>
+            <Button Grid.Row="1" Grid.Column="9" Content="Clear" Name="ClearButton" Click="ClearButton_OnClick"></Button>
+            <Button Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="3" Content="Undo Last Command" Name="UndoButton" Click="UndoButton_OnClick"></Button>
+            <Button Grid.Row="3" Grid.Column="6" Grid.ColumnSpan="3" Content="Redo Last Command" Name="RedoButton" Click="RedoButton_OnClick"></Button>
+
         </Grid>
         <Grid Grid.Row="3" Name="GridResults">
             <Grid.ColumnDefinitions>

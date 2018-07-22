@@ -19,11 +19,12 @@ using WindowStartupLocation = System.Windows.WindowStartupLocation;
 namespace CommandTest.Views
 {
     /// <summary>
-    /// Interaction logic for ColorChangerDemoWindow.xaml
+    /// This is another example of using the command pattern using WPF. Instead of being a calculator, we are changing the window.
+    /// The window in this example is again, the client.
     /// </summary>
     public partial class ColorChangerDemoWindow : Window
     {
-        private ColorChangeHistory history = new ColorChangeHistory();
+        private ColorChangeInvoker _colorChangeInvoker = new ColorChangeInvoker();
 
         public ColorChangerDemoWindow()
         {
@@ -32,22 +33,27 @@ namespace CommandTest.Views
 
         private void ChangeToGreenButton_OnClick(object sender, RoutedEventArgs e)
         {
-            ExecuteCommand(new ChangeToGreenCommand(this));
+            _colorChangeInvoker.SetCommand(new ChangeToGreenCommand(this));
+            _colorChangeInvoker.ExecuteCommand();
         }
 
         private void ChangeToYellowButton_OnClick(object sender, RoutedEventArgs e)
         {
-            ExecuteCommand(new ChangeToYellowCommand(this));
+            _colorChangeInvoker.SetCommand(new ChangeToYellowCommand(this));
+            _colorChangeInvoker.ExecuteCommand();
         }
 
         private void ChangeToRedButton_OnClick(object sender, RoutedEventArgs e)
         {
-            ExecuteCommand(new ChangeToRedCommand(this));
+            _colorChangeInvoker.SetCommand(new ChangeToRedCommand(this));
+            _colorChangeInvoker.ExecuteCommand();
         }
 
         private void ChangeToBlackButton_OnClick(object sender, RoutedEventArgs e)
         {
-            ExecuteCommand(new ChangeToBlackCommand(this));
+            _colorChangeInvoker.SetCommand(new ChangeToBlackCommand(this));
+            _colorChangeInvoker.ExecuteCommand();
+
         }
 
         private void ChangeToCustomColorButton_OnClick(object sender, RoutedEventArgs e)
@@ -62,24 +68,9 @@ namespace CommandTest.Views
             Undo();
         }
 
-        private void ExecuteCommand(ColorCommand command)
-        {
-            if (command.ExecuteColorChange())
-            {
-                history.PushColorCommand(command);
-            }
-        }
-
         private void Undo()
         {
-            if (history.IsEmpty())
-            {
-                return;
-            }
-
-            ColorCommand command = history.PopColorCommand();
-
-            command?.Undo();
+            _colorChangeInvoker.Undo();
         }
 
         private void SelectAndProcessGenericColor()
@@ -88,7 +79,8 @@ namespace CommandTest.Views
             var result = colorSelectorDialog.ShowDialog();
             if (result == true)
             {
-                ExecuteCommand(new ChangeToGenericColorCommand(this, colorSelectorDialog.SelectedColorBrush));
+                _colorChangeInvoker.SetCommand(new ChangeToGenericColorCommand(this, colorSelectorDialog.SelectedColorBrush));
+                _colorChangeInvoker.ExecuteCommand();
             }
         }
 

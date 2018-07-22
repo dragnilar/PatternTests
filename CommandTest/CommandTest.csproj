@@ -92,11 +92,16 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Classes\CalculatorDemoClasses\CalculatorCommandAbstract.cs" />
+    <Compile Include="Classes\CalculatorDemoClasses\CalculatorReceiver.cs" />
+    <Compile Include="Classes\CalculatorDemoClasses\CalculatorCommand.cs" />
+    <Compile Include="Classes\CalculatorDemoClasses\CalculatorInvoker.cs" />
     <Compile Include="Classes\ColorChangeDemoClasses\ChangeToBlackCommand.cs" />
     <Compile Include="Classes\ColorChangeDemoClasses\ChangeToGenericColorCommand.cs" />
     <Compile Include="Classes\ColorChangeDemoClasses\ChangeToGreenCommand.cs" />
     <Compile Include="Classes\ColorChangeDemoClasses\ChangeToRedCommand.cs" />
     <Compile Include="Classes\ColorChangeDemoClasses\ChangeToYellowCommand.cs" />
+    <Compile Include="Classes\ColorChangeDemoClasses\ColorChangeInvoker.cs" />
     <Compile Include="Classes\ColorChangeDemoClasses\ColorCommand.cs" />
     <Compile Include="Classes\ColorChangeDemoClasses\ColorChangeHistory.cs" />
     <Compile Include="Views\CalculatorCommandDemoWindow.xaml.cs">
