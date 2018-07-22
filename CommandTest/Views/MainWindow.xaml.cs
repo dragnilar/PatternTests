@@ -14,12 +14,17 @@ namespace CommandTest.Views
 
         }
 
-        private void CommandTestOneButton_OnClick(object sender, RoutedEventArgs e)
+        private void CalculatorCommandDemoButton_OnClick(object sender, RoutedEventArgs e)
         {
             var window = new CalculatorCommandDemoWindow();
             window.Show();
         }
 
 
+        private void ColorCommandDemoButton_OnClick(object sender, RoutedEventArgs e)
+        {
+            var window = new ColorChangerDemoWindow();
+            window.Show();
+        }
     }
 }

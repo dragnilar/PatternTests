@@ -1,0 +1,47 @@
+﻿<Window x:Class="CommandTest.Views.ColorChangerDemoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CommandTest.Views"
+        mc:Ignorable="d"
+        Title="Color Changing Command Demo" Height="450" Width="800" WindowState="Maximized" Background="Black">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Foreground" Value="Black"></Setter>
+            <Setter Property="FontSize" Value="14"></Setter>
+            <Setter Property="BorderBrush" Value="CornflowerBlue"></Setter>
+            <Setter Property="BorderThickness" Value="1"></Setter>
+        </Style>
+    </Window.Resources>
+    <Grid Name="MainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="51*"></RowDefinition>
+            <RowDefinition Height="300*"></RowDefinition>
+            <RowDefinition Height="50*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Viewbox Stretch="Uniform" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="0">
+            <TextBlock Text="Color Change Command Demo" Grid.Row="0" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+        </Viewbox>
+
+        <Grid Row="1" Name="MiddleGrid">
+
+        </Grid>
+        <Grid Grid.Row="2" Name="BottomGrid">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Content="Change To Green" Name="ChangeToGreenButton" Click="ChangeToGreenButton_OnClick"></Button>
+            <Button Grid.Column="1" Content="Change To Yellow"  Name="ChangeToYellowButton" Click="ChangeToYellowButton_OnClick"></Button>
+            <Button Grid.Column="2" Content="Change To Red"  Name="ChangeToRedButton" Click="ChangeToRedButton_OnClick"></Button>
+            <Button Grid.Column="3" Content="Change To Black"  Name="ChangeToBlackButton" Click="ChangeToBlackButton_OnClick"></Button>
+            <Button Grid.Column="4" Content="Use Custom Color" Name="ChangeToCustomColorButton" Click="ChangeToCustomColorButton_OnClick"></Button>
+            <Button Grid.Column="5" Content="Undo" Name="UndoButton" Click="UndoButton_OnClick"></Button>
+        </Grid>
+    </Grid>
+</Window>

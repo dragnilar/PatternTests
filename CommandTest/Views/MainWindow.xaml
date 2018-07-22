@@ -25,9 +25,12 @@
                 <RowDefinition Height="90*"></RowDefinition>
                 <RowDefinition Height="192*"></RowDefinition>
             </Grid.RowDefinitions>
-            <Button Name="CommandTestOneButton" Content="Command Test One" Grid.Row="1" Grid.Column="1"
+            <Button Name="CalculatorCommandDemoButton" Content="Calculator Command Demo" Grid.Row="1" Grid.Column="1"
                     FontSize="25" Foreground="Black" Background="Azure" BorderBrush="CornflowerBlue" BorderThickness="5"
-                    Click="CommandTestOneButton_OnClick"></Button>
+                    Click="CalculatorCommandDemoButton_OnClick"></Button>
+            <Button Name="ColorCommandDemoButton" Content="Color Command Demo" Grid.Row="1" Grid.Column="3"
+                    FontSize="25" Foreground="Black" Background="Azure" BorderBrush="CornflowerBlue" BorderThickness="5"
+                    Click="ColorCommandDemoButton_OnClick"></Button>
         </Grid>
         <Label Content="Press A Button Below To View A Command Demo" Grid.Row="0" Name="HeaderLabel" Foreground="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}"
                VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="35"

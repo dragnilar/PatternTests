@@ -1,0 +1,25 @@
+﻿<Window x:Class="CommandTest.Views.ColorSelector"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CommandTest.Views"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        mc:Ignorable="d"
+        Title="Select A Color" Height="345" Width="400" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="145*"></RowDefinition>
+            <RowDefinition Height="10*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <xctk:ColorCanvas Grid.Row="0" Name="ColorCanvasMain"></xctk:ColorCanvas>
+        <Grid Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Content="Select Color" Name="ButtonOK" Grid.Column="0" Click="ButtonOK_OnClick"></Button>
+            <Button Content="Cancel" Name="ButtonCancel" Grid.Column="1" Click="ButtonCancel_OnClick"></Button>
+        </Grid>
+    </Grid>
+</Window>
