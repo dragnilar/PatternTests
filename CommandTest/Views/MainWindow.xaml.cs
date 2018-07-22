@@ -16,7 +16,7 @@ namespace CommandTest.Views
 
         private void CommandTestOneButton_OnClick(object sender, RoutedEventArgs e)
         {
-            var window = new CommandOneWindow();
+            var window = new CalculatorCommandDemoWindow();
             window.Show();
         }
 

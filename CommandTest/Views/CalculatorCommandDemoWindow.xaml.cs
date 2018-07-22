@@ -16,9 +16,12 @@ using System.Windows.Shapes;
 namespace CommandTest.Views
 {
     /// <summary>
-    /// Interaction logic for CommandOneWindow.xaml
+    /// This is a simple demonstration of using the command pattern using WPF.
+    /// To learn more about the command pattern, review the following link or search around the web.
+    /// Further reading: https://refactoring.guru/design-patterns/command/
+    /// This is based off of the example you can find here: https://www.dofactory.com/net/command-design-pattern
     /// </summary>
-    public partial class CommandOneWindow : Window
+    public partial class CalculatorCommandDemoWindow : Window
     {
         private CalculatorUser currentCalculatorUser = new CalculatorUser();
 
@@ -28,11 +31,11 @@ namespace CommandTest.Views
             set => SetValue(_calculatorOutPut, value);
         } 
         public static readonly DependencyProperty _calculatorOutPut = DependencyProperty.Register("CalculatorOutPut", typeof(object),
-            typeof(CommandOneWindow), new FrameworkPropertyMetadata(false));
+            typeof(CalculatorCommandDemoWindow), new FrameworkPropertyMetadata(false));
 
         
 
-        public CommandOneWindow()
+        public CalculatorCommandDemoWindow()
         {
             InitializeComponent();
             CalculatorOutPut = "Calculator Output";
@@ -178,7 +181,7 @@ namespace CommandTest.Views
 
                     }
 
-                    return $"Current Value = {CurrentValue}, following {@operator} {operand}";
+                    return $"Current Value = {CurrentValue}, following: {@operator} with operand: {operand}";
                 }
                 catch (Exception e)
                 {
@@ -193,7 +196,7 @@ namespace CommandTest.Views
         {
             private Calculator _calculator = new Calculator();
             private List<Command> _commands = new List<Command>();
-            private int CurrentValue = 0;
+            private int CurrentValue;
 
             public string Redo(int levels)
             {
