@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyTest", "StrategyTes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandTest", "CommandTest\CommandTest.csproj", "{CF9CBA7C-FE12-4AAA-8375-213EE5BF433A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IteratorTest", "IteratorTest\IteratorTest.csproj", "{DDE1B4D2-2717-409E-AF78-429F7F77426C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{CF9CBA7C-FE12-4AAA-8375-213EE5BF433A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF9CBA7C-FE12-4AAA-8375-213EE5BF433A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF9CBA7C-FE12-4AAA-8375-213EE5BF433A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDE1B4D2-2717-409E-AF78-429F7F77426C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDE1B4D2-2717-409E-AF78-429F7F77426C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDE1B4D2-2717-409E-AF78-429F7F77426C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDE1B4D2-2717-409E-AF78-429F7F77426C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
