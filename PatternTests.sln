@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiscTest", "MiscTest\MiscTe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqTests", "LinqTests\LinqTests.csproj", "{079AC5B0-45A0-45C4-9C98-D9C741C0F1EB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObserverTest", "ObserverTest\ObserverTest.csproj", "{171C811D-39B6-4882-B125-4C86C85E593C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{079AC5B0-45A0-45C4-9C98-D9C741C0F1EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{079AC5B0-45A0-45C4-9C98-D9C741C0F1EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{079AC5B0-45A0-45C4-9C98-D9C741C0F1EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{171C811D-39B6-4882-B125-4C86C85E593C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{171C811D-39B6-4882-B125-4C86C85E593C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{171C811D-39B6-4882-B125-4C86C85E593C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{171C811D-39B6-4882-B125-4C86C85E593C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
