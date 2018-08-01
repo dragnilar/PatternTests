@@ -19,6 +19,7 @@ namespace ObserverTest
             while (true)
             {
                 Console.WriteLine("Press 1 to run a vanilla observer example.");
+                Console.WriteLine("Press 2 to run a bogus game system observer example.");
                 Console.WriteLine("Press Esc to exit.");
 
                 var input = Console.ReadKey();
@@ -28,6 +29,10 @@ namespace ObserverTest
                     case ConsoleKey.D1:
                     case ConsoleKey.NumPad1:
                         new VanillaObserverExample().RunExample();
+                        break;
+                    case ConsoleKey.D2:
+                    case ConsoleKey.NumPad2:
+                        new BogusGameSystemExample().RunExample();
                         break;
                     case ConsoleKey.Escape:
                         Environment.Exit(0);
